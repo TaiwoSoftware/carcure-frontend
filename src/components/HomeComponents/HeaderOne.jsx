@@ -16,8 +16,8 @@ export default function HeaderOne() {
         <h1 className="uppercase text-white font-small-bold text-6xl mb-2">
           Easier!
         </h1>
-        <div className=" bg-white mt-10 w-[25rem] shadow-md shadow-slate-600 flex gap-8 items-center rounded-lg p-2">
-          <div className="bg-black text-white text-center px-4 py-2 w-[10rem] rounded-lg">
+        <div className=" bg-white mt-10 cursor-pointer w-[25rem] shadow-md shadow-slate-600 flex gap-8 items-center rounded-lg p-2">
+          <div className="bg-black cursor-pointer text-white text-center px-4 py-2 w-[10rem] rounded-lg">
             About Us
           </div>
           <p>JOIN THE WAITLIST</p>
