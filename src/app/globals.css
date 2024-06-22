@@ -1,4 +1,8 @@
-@import './poppins.css';
+/* @import './poppins.css'; */
+@font-face {
+    font-family: 'poppins';
+    src: url('../components/assets/poppins/Poppins-Regular.ttf');
+}
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +10,7 @@
 
 
 html {
+    font-family: 'poppins' sans-serif;
     max-width: 1440px;
     width: 100%;
     padding: 0;
