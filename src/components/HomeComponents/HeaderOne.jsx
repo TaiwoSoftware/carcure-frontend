@@ -6,6 +6,7 @@ import imageTwo from "../assets/image2.svg";
 import imageThree from "../assets/image3.svg";
 import imageFour from "../assets/image8.svg";
 import imageFive from "../assets/imge9.svg";
+import Link from "next/link";
 export default function HeaderOne() {
   return (
     <div className="relative flex px-20 py-8 justify-between mt-[-2rem] items-center">
@@ -23,10 +24,16 @@ export default function HeaderOne() {
           Easier!
         </h1>
         <div className=" bg-white mt-10 cursor-pointer w-[25rem] shadow-md shadow-slate-600 flex gap-8 items-center rounded-lg p-2">
-          <div className="bg-black cursor-pointer text-white text-center px-4 py-2 w-[10rem] rounded-lg">
-            About Us
-          </div>
-          <p>JOIN THE WAITLIST</p>
+          <Link href="/about">
+            <div className="bg-black cursor-pointer text-white text-center px-4 py-2 w-[10rem] rounded-lg">
+              About Us
+            </div>
+          </Link>
+          <Link href='/wait'>
+            <div>
+              <p>JOIN THE WAITLIST</p>
+            </div>
+          </Link>
         </div>
       </div>
       <div>
@@ -40,10 +47,26 @@ export default function HeaderOne() {
             <>
               <div className="flex w-full items-center  ml-[.75rem]">
                 <Image src={imageOne} alt="female" className="w-[2rem]" />
-                <Image src={imageTwo} alt="male one" className="w-[3rem] -translate-x-1" />
-                <Image src={imageThree} alt="male two" className="w-[4rem] -translate-x-3" />
-                <Image src={imageFour} alt="male three" className="w-[3rem] -translate-x-3" />
-                <Image src={imageFive} alt="male four" className="w-[2rem] -translate-x-3" />
+                <Image
+                  src={imageTwo}
+                  alt="male one"
+                  className="w-[3rem] -translate-x-1"
+                />
+                <Image
+                  src={imageThree}
+                  alt="male two"
+                  className="w-[4rem] -translate-x-3"
+                />
+                <Image
+                  src={imageFour}
+                  alt="male three"
+                  className="w-[3rem] -translate-x-3"
+                />
+                <Image
+                  src={imageFive}
+                  alt="male four"
+                  className="w-[2rem] -translate-x-3"
+                />
               </div>
             </>
           }

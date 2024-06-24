@@ -1,3 +1,4 @@
+import WaitlistForm from "../Auth/WaitlistForm";
 export default function WaitListForm() {
   return (
     <div className="bg-[#ffffff1f] rounded-lg w-[400px] h-[34rem] p-4">
@@ -9,6 +10,7 @@ export default function WaitListForm() {
       </p>
       <br />
       <p className="text-white">Be the first to be notified!!</p>
+      <WaitlistForm />
     </div>
   );
 }
